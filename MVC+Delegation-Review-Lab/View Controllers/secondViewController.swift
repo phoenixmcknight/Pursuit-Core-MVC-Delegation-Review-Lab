@@ -43,7 +43,10 @@ class SecondViewController: UIViewController {
         super .viewDidLoad()
        sliderOutlet1.value = currentValue ?? 20
         stepperOutlet1.value = Double(currentValue ?? 20)
+       
         sizePreview.text = "Previous Font Size: \(String(describing: currentValue ?? 20))"
+   test2.text = "Change TableView Font Size"
+    
     }
     }
 

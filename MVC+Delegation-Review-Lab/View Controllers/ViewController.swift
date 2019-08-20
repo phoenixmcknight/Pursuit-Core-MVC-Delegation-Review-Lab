@@ -47,10 +47,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? SecondViewController else {fatalError()}
         destination.delegate = self
-//        let cells = tableViewOne.visibleCells
-//        for cell in cells {
-//            destination.currentValue = Float((cell.textLabel?.font.pointSize)!)
-//        }
+        let cells = tableViewOne.visibleCells
+        for cell in cells {
+            destination.currentValue = Float((cell.textLabel?.font.pointSize)!)
+        }
     }
 }
 
